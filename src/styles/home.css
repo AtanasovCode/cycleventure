@@ -1,0 +1,66 @@
+
+
+.home-info-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.home-bg-container {
+    width: 100vw;
+    height: 300px;
+    background-image: url('../images/cycle-hill.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50vh;
+}
+
+.home-shop-container {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.shop-btn {
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.main-heading {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.sub-heading {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    font-size: 16px;
+    font-weight: 500;
+    opacity: .7;
+}

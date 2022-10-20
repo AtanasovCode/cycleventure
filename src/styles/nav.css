@@ -1,0 +1,36 @@
+.nav-container {
+    width: 100vw;
+    height: 100px;
+    background-color: var(--nav-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 18px;
+    padding: 30px;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+}
+
+.nav-logo {
+    font-family: 'Prompt', sans-serif;
+    font-weight: 900;
+    font-size: 26px;
+}
+
+.nav-links a {
+    color: var(--nav-a-color);
+    text-decoration: none;
+    padding: 15px;
+    transition: all .4s;
+}
+
+.nav-links a:visited {
+    color: var(--nav-a-color);
+}
+
+.nav-links a:hover {
+    cursor: pointer;
+    color: var(--nav-a-hover);
+    font-size: 20px;
+    padding: 17px;
+    transition: all .4s;
+}
