@@ -1,0 +1,72 @@
+.full-products-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.categories-full-container {
+    height: calc(100% - 100px); /*100px is the height of the nav bar*/
+    width: 250px;
+    border-right: 1px solid rgba(255, 255, 255, .2);
+}
+
+.categories-heading-container {
+    width: 100%;
+    height: 50px;
+    font-size: 22px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.category-options-container {
+    width: 100%;
+    height: calc(100% - 50px);
+}
+
+.category-container {
+    width: 100%;
+    height: calc(20% - 8px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    user-select: none;
+    margin-bottom: 8px;
+}
+
+.category-name {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .6);
+    font-size: 22px;
+    transition: all .4s;
+}
+
+.category-name:hover {
+    background-color: rgba(0, 0, 0, .2);
+    transition: all .4s;
+    cursor: pointer;
+}
+
+.all-products {
+    background-image: url('../images/all-products.jpg');
+}
+
+.road-bike-container {
+    background-image: url('../images/road-bike.jpg');
+}
+
+.ebikes-container {
+    background-image: url('../images/ebike.jpg');
+}
+
+.helmets-container {
+    background-image: url('../images/helmet.jpg');
+}
+
+.clothing-container {
+    background-image: url('../images/clothing.jpg');
+}

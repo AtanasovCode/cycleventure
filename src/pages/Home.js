@@ -21,17 +21,17 @@ const Home = () => {
                         <span className="main-heading">
                             Adventure Awaits!
                         </span>
-                        <Link 
+                        <Link
                             to="/products"
                             className="shop-btn"
                         >
-                            Shop Now
+                            Shop Now!
                         </Link>
                     </div>
+                    <div className="photo-attr">
+                        Photo by Óscar Aguilar Elías on <a href="https://unsplash.com/">Unsplash</a>
+                    </div>
                 </div>
-            </div>
-            <div className="about-full-container">
-                <h1>About</h1>
             </div>
         </div>
     );

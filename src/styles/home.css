@@ -1,8 +1,6 @@
-
-
 .home-info-container {
     width: 100vw;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -43,11 +41,35 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: black;
-    color: #fff;
+    background-color: rgb(224, 221, 221);
+    color: #000;
     text-decoration: none;
     font-size: 16px;
     font-weight: 500;
+    transition: all .4s;
+}
+
+.shop-btn:hover {
+    background-color: #fff;
+    color: #000;
+    transform: scale(1.1);
+    transition: all .4s;
+}
+
+.photo-attr {
+    font-size: 14px;
+    opacity: .3;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.photo-attr a {
+    color: #fff;
+}
+
+.photo-attr a:visited {
+    color: #fff;
 }
 
 .main-heading {
@@ -59,8 +81,40 @@
 .sub-heading {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 40vw;
     font-size: 16px;
     font-weight: 500;
     opacity: .7;
 }
+
+@media only screen and (max-width: 1000px) {
+    .sub-heading {
+        width: 55vw;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .home-info {
+        align-items: center;
+    }
+    .sub-heading {
+        width: 65vw;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 500px) {
+    .main-heading {
+        font-size: 26px;
+    }
+    .sub-heading {
+        width: 90vw;
+        height: 400px;
+    }
+    .home-bg-container {
+        top: 53vh;
+    }
+}
+
+
