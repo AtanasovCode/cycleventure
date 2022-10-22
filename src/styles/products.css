@@ -6,7 +6,6 @@
 .categories-full-container {
     height: calc(100% - 100px); /*100px is the height of the nav bar*/
     width: 250px;
-    border-right: 1px solid rgba(255, 255, 255, .2);
 }
 
 .category-icon {
