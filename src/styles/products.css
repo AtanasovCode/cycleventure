@@ -9,32 +9,73 @@
     width: 250px;
     margin-top: 100px;
     background-color: var(--nav-bg);
+    position: fixed;
+    top: 0;
 }
 
 
 .displayed-products-container {
     width: calc(100vw - 250px);
-    height: calc(100vh - 100px);
+    height: min-content;
+    padding-top: 50px;
     margin-top: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    margin-left: 250px;
+}
+
+.box-container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    place-content: center;
+    grid-gap: 80px 120px;
+    padding-bottom: 30px;
 }
 
 .product-box {
-    width: 150px;
-    height: 150px;
+    border: 1px solid black;
+    width: 250px;
+    height: 280px;
+    padding-top: 10px;
+    overflow: hidden;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: all .5s;
+}
+
+.product-box:hover {
     border: 1px solid #fff;
+    transition: all .5s;
+}
+
+.product-image-displayed {
+    width: 250px;
+}
+
+.product-name {
+    width: 100%;
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.product-price {
+    width: 100%;
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    opacity: .5;
 }
 
 .category-icon {
     width: 0;
     height: 0;
-    position: absolute;
+    position: fixed;
     top: 40px;
     left: 5%;
     cursor: pointer;
@@ -108,7 +149,7 @@
 @media only screen and (max-width: 700px) {
     .categories-full-container {
         transform: translateX(-250px);
-        position: absolute;
+        position: fixed;
         transition: all .4s;
     }
     .displayed-products-container {
@@ -118,7 +159,7 @@
         transform: translateX(0);
         transition: all .4s;
         z-index: 999;
-        position: absolute
+        position: fixed;
     }
     .category-icon {
         width: 35px;
@@ -131,6 +172,10 @@
 @media only screen and (max-width: 500px) {
     .categories-full-container.show {
         width: 100vw;
+        position: fixed;
+    }
+    .displayed-products-container.no-scroll {
+        overflow-y: hidden;
     }
     .category-icon {
         width: 25px;

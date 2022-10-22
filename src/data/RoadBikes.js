@@ -1,15 +1,15 @@
-import propelAdvancedDisc1 from '../images/products/road-bikes/propel-advanced-disk-1.jpg';
-import propelAdvancedSL0 from '../images/products/road-bikes/propel-advanced-sl-0.jpg';
-import trcAdvancedPro1 from '../images/products/road-bikes/trc-advanced-pro-1.jpg';
+import propelAdvancedDisc1 from '../images/products/road-bikes/propel-advanced-disk-1.webp';
+import propelAdvancedSL0 from '../images/products/road-bikes/propel-advanced-sl-0.webp';
+import trcAdvancedPro1 from '../images/products/road-bikes/trc-advanced-pro-1.webp';
 import madoneSlrGen7 from '../images/products/road-bikes/madone-slr-gen-7.webp';
 import madoneSl7eTap from '../images/products/road-bikes/madone-sl-7-eTap.webp';
-import boone6 from '../images/products/road-bikes/boone-6.jpg';
+import boone6 from '../images/products/road-bikes/boone-6.webp';
 import roubaixExpert from '../images/products/road-bikes/roubaix-expert.webp';
 import roubaixSport from '../images/products/road-bikes/roubaix-sport.webp';
 import tarmacSl7Expert from '../images/products/road-bikes/tarmac-sl7-expert.webp';
-import domaneAl4Disc from '../images/products/road-bikes/domane-al-4-disc.jpg';
-import defyAdvancedPro1 from '../images/products/road-bikes/defy-advanced-pro-1.jpg';
-import contendAr1 from '../images/products/road-bikes/contend-ar-1.jpg';
+import domaneAl4Disc from '../images/products/road-bikes/domane-al-4-disc.webp';
+import defyAdvancedPro1 from '../images/products/road-bikes/defy-advanced-pro-1.webp';
+import contendAr1 from '../images/products/road-bikes/contend-ar-1.webp';
 
 
 const RoadBikes = [

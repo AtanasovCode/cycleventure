@@ -8,7 +8,7 @@
     font-size: 18px;
     padding: 30px;
     border-bottom: 1px solid rgba(255, 255, 255, .2);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 9999;
@@ -42,7 +42,7 @@
 .menu-icon {
     width: 0;
     height: 0;
-    position: absolute;
+    position: fixed;
     top: 40px;
     right: 5%;
     opacity: 1;
