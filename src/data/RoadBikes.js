@@ -3,7 +3,7 @@ import propelAdvancedSL0 from '../images/products/road-bikes/propel-advanced-sl-
 import trcAdvancedPro1 from '../images/products/road-bikes/trc-advanced-pro-1.jpg';
 import madoneSlrGen7 from '../images/products/road-bikes/madone-slr-gen-7.webp';
 import madoneSl7eTap from '../images/products/road-bikes/madone-sl-7-eTap.webp';
-import boone6 from '../images/products/road-bikes/boone6.jpg';
+import boone6 from '../images/products/road-bikes/boone-6.jpg';
 import roubaixExpert from '../images/products/road-bikes/roubaix-expert.webp';
 import roubaixSport from '../images/products/road-bikes/roubaix-sport.webp';
 import tarmacSl7Expert from '../images/products/road-bikes/tarmac-sl7-expert.webp';
@@ -12,7 +12,7 @@ import defyAdvancedPro1 from '../images/products/road-bikes/defy-advanced-pro-1.
 import contendAr1 from '../images/products/road-bikes/contend-ar-1.jpg';
 
 
-const roadBikes = [
+const RoadBikes = [
     {
         category: "Road Bikes",
         categoryId: "roadbikes",
@@ -133,4 +133,6 @@ const roadBikes = [
         image: tarmacSl7Expert,
         description: "With a light-weight, Rider-First Engineered™ frame, it delivers the best-possible ride characteristics, no matter the size. So no matter what you have planned for your new Tarmac, its ready to help you achieve your goals—PRs, KOMs, or podium top-steps. One bike to rule them all."
     },
-]
+];
+
+export default RoadBikes;

@@ -8,7 +8,7 @@ import divergeSportCarbon from '../images/products/gravel-bikes/diverge-sport-ca
 import divergeStrPro from '../images/products/gravel-bikes/diverge-str-pro.webp';
 import sWorksDivergeStr from '../images/products/gravel-bikes/s-works-diverge-str.webp';
 
-const gravelBikes = [
+const GravelBikes = [
     {
         category: "Gravel Bikes",
         categoryId: "gravelbikes",
@@ -99,4 +99,6 @@ const gravelBikes = [
         image: sWorksDivergeStr,
         description: "With Future Shock suspension front and rear, the new Diverge STR delivers compliance without compromise. By suspending the rider—instead of the bike—Future Shock technology increases control and efficiency ."
     },
-]
+];
+
+export default GravelBikes;

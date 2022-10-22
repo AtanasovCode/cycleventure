@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Nav from "../navigation/Nav";
 import Categories from "./Categories";
+import AllData from "../data/AllData";
 import '../styles/products.css';
 import category from '../images/categories.png';
 import close from '../images/close.png';
@@ -38,6 +39,11 @@ const Products = () => {
                 className="category-icon"
                 onClick={onCategoryClick}
             />
+            <div className="displayed-products-container">
+                <div className="product-box">
+                    
+                </div>
+            </div>
         </div>
     );
 }

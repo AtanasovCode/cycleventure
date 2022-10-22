@@ -17,6 +17,11 @@ const Categories = ({className}) => {
                         Road Bikes
                     </div>
                 </div>
+                <div className="category-container clothing-container">
+                    <div className="category-name">
+                        Gravel Bikes
+                    </div>
+                </div>
                 <div className="category-container ebikes-container">
                     <div className="category-name">
                         eBikes
@@ -25,11 +30,6 @@ const Categories = ({className}) => {
                 <div className="category-container helmets-container">
                     <div className="category-name">
                         Helmets
-                    </div>
-                </div>
-                <div className="category-container clothing-container">
-                    <div className="category-name">
-                        Clothing
                     </div>
                 </div>
             </div>
