@@ -1,5 +1,3 @@
-import AllData from "../data/AllData";
-
 const AllProducts = ({ products }) => {
 
     const formatNumber = (number) => {

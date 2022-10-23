@@ -125,6 +125,12 @@
     cursor: pointer;
 }
 
+.category-name.active {
+    border: 2px solid rgba(255, 255, 255, .5);;
+    background-color: rgba(0, 0, 0, .2);
+    filter: brightness(400%);
+}
+
 .all-products {
     background-image: url('../images/all-products.jpg');
 }

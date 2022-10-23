@@ -8,7 +8,7 @@ const Categories = ({className}) => {
             </div>
             <div className="category-options-container">
                 <div className="category-container all-products">
-                    <div className="category-name">
+                    <div className="category-name active">
                         All Products
                     </div>
                 </div>

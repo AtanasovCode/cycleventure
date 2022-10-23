@@ -43,7 +43,7 @@ const Products = () => {
                 onClick={onCategoryClick}
             />
             <div className="displayed-products-container">
-                <AllProducts products={RoadBikes} />
+                <AllProducts products={AllData} />
             </div>
         </div>
     );
