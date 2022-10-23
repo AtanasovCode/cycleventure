@@ -20,6 +20,7 @@ const Helmets = [
         category: "Helmets",
         categoryId: "helmets",
         brand: "Bontrager",
+        id: "circuit-wavecell",
         name: "Circuit WaveCel",
         price: 134,
         image: bontragerCircuitWavecel,

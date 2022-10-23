@@ -1,15 +1,18 @@
 import { useState, useEffect } from "react";
+import { Outlet, Link } from "react-router-dom";
 import Nav from "../navigation/Nav";
 import Categories from "./Categories";
 import AllData from "../data/AllData";
-import RoadBikes from "../data/RoadBikes";
-import AllProducts from "../products/AllProducts";
 import '../styles/products.css';
 import category from '../images/categories.png';
 import close from '../images/close.png';
 
 
 const Products = () => {
+
+    const formatNumber = (number) => {
+        return number.toLocaleString('en-US');
+    }
 
     const [iconSrc, setIconSrc] = useState(category);
     const [showCategories, setShowCategories] = useState(false);
@@ -53,9 +56,24 @@ const Products = () => {
                 onClick={onCategoryClick}
             />
             <div className="displayed-products-container">
-                <AllProducts products={productsToDisplay} />
+                {productsToDisplay.map((product) => (
+                    <Link
+                        to={`/products/${product.id}`}
+                        key={product.id}
+                        className="product-box"
+                    >
+                        <img
+                            src={product.image}
+                            className="product-image-displayed"
+                        />
+                        <div className="product-name">{product.name}</div>
+                        <div className="product-price">${formatNumber(product.price)}</div>
+                    </Link>
+                ))}
             </div>
+            <Outlet />
         </div>
+
     );
 }
 
