@@ -13,22 +13,32 @@ const Products = () => {
 
     const [iconSrc, setIconSrc] = useState(category);
     const [showCategories, setShowCategories] = useState(false);
-    const [productID, setProductID] = useState(6);
+    const [productsToDisplay, setProductsToDisplay] = useState(AllData);
 
     const onCategoryClick = () => {
         setShowCategories(!showCategories);
-        if(iconSrc === category) setIconSrc(close);
-        if(iconSrc === close) setIconSrc(category);
+        if (iconSrc === category) setIconSrc(close);
+        if (iconSrc === close) setIconSrc(category);
     }
 
     const displayMobile = () => {
-        if(showCategories) {
+        if (showCategories) {
             return (
-                <Categories className="categories-full-container show" />
+                <Categories
+                    className="categories-full-container show"
+                    productsToDisplay={productsToDisplay}
+                    setProductsToDisplay={setProductsToDisplay}
+                    onCategoryClick={onCategoryClick}
+                />
             );
-        }else {
+        } else {
             return (
-                <Categories className="categories-full-container" />
+                <Categories
+                    className="categories-full-container"
+                    productsToDisplay={productsToDisplay}
+                    setProductsToDisplay={setProductsToDisplay}
+                    onCategoryClick={onCategoryClick}
+                />
             );
         }
     }
@@ -37,13 +47,13 @@ const Products = () => {
         <div className="full-products-container">
             <Nav />
             {displayMobile()}
-            <img 
+            <img
                 src={iconSrc}
                 className="category-icon"
                 onClick={onCategoryClick}
             />
             <div className="displayed-products-container">
-                <AllProducts products={AllData} />
+                <AllProducts products={productsToDisplay} />
             </div>
         </div>
     );

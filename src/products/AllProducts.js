@@ -1,8 +1,9 @@
 const AllProducts = ({ products }) => {
 
     const formatNumber = (number) => {
-        return number.toLocaleString('en-US'); 
+        return number.toLocaleString('en-US');
     }
+
 
     const content = products.map((product) =>
         <div key={product.id} className="product-box">
