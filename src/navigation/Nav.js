@@ -4,7 +4,7 @@ import '../styles/nav.css';
 import menu from '../images/menu.png';
 import close from '../images/close.png';
 
-const Nav = () => {
+const Nav = ({cartProducts}) => {
 
     const [displayMenu, setDisplayMenu] = useState(false);
     const [iconSrc, setIconSrc] = useState(menu);
@@ -23,7 +23,7 @@ const Nav = () => {
                         <Link to="/">Home</Link>
                         <Link to="/products">Products</Link>
                         <Link to="/contact">Contact</Link>
-                        <Link to="/cart">Cart (0)</Link>
+                        <Link to="/cart">Cart ({cartProducts})</Link>
                     </div>
                     <div className="nav-menu-icon">
                         <img
@@ -41,7 +41,7 @@ const Nav = () => {
                         <Link to="/">Home</Link>
                         <Link to="/products">Products</Link>
                         <Link to="/contact">Contact</Link>
-                        <Link to="/cart">Cart (0)</Link>
+                        <Link to="/cart">Cart ({cartProducts})</Link>
                     </div>
                     <div className="nav-menu-icon">
                         <img

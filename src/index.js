@@ -9,6 +9,7 @@ import Cart from './Cart';
 import SelectedProduct from './pages/SelectedProduct';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <BrowserRouter>
     <Routes>
