@@ -36,6 +36,7 @@ const EBikes = [
         name: "Domane+ SLR 7",
         price: 9500,
         image: domanePlusSlr7,
+        description: "The Domane+ SLR 7 is our best category-redefining carbon e-road bike that doesn't look, fit or feel like a standard e-bike. It's built on an 800 Series OCLV Carbon frame that hides a compact and refined motor to elevate your ride with natural-feeling assist."
     },
     {
         category: "eBikes",

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import AllData from "../data/AllData";
 import Nav from "../navigation/Nav";
@@ -6,18 +6,36 @@ import '../styles/selected-product.css';
 import checkmark from '../images/checkmark.png';
 import cart from '../images/cart.png';
 
-const SelectedProduct = () => {
+const SelectedProduct = ({
+    cartNum,
+    setCartNum,
+    setCartProducts,
+}) => {
+     
     let params = useParams();
     let productId = params.productId;
 
+    const onAddBtn = () => {
+        setCartNum(cartNum + 1);
+        setCartProducts(current => [...current, `${productId}`]);
+        //AllData.map((product) => {
+        //    if(product.id === productId) {
+        //        setCartProducts(...AllData);
+        //    }
+        //}
+        //)
+    }
 
     return (
         <div className="full-selected-product-container">
-            <Nav />
+            <Nav cartNum={cartNum} />
             {AllData.map((product) => {
                 if (product.id === productId) {
                     return (
-                        <div className="selected-product-container">
+                        <div
+                            className="selected-product-container"
+                            key={product.id}
+                        >
                             <div className="selected-product-image-container">
                                 <img
                                     src={product.image}
@@ -60,14 +78,14 @@ const SelectedProduct = () => {
                                         type="button"
                                         value="Add To Cart"
                                         className="cart-add-btn"
+                                        onClick={onAddBtn}
                                     />
                                 </div>
                             </div>
                         </div>
                     );
                 }
-            }
-            )}
+            })}
         </div>
     );
 }

@@ -8,7 +8,7 @@ const AllData = [
     ...RoadBikes,
     ...GravelBikes,
     ...EBikes,
-    ...Helmets
+    ...Helmets,
 ];
 
 export default AllData;

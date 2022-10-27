@@ -11,6 +11,7 @@ const Helmets = [
         category: "Helmets",
         categoryId: "helmets",
         brand: "Giant",
+        id: "rev-mips",
         name: "Rev Mips",
         price: 100,
         image: revMipsMensHelmet,

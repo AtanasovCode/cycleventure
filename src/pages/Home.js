@@ -3,10 +3,11 @@ import Nav from "../navigation/Nav";
 import '../styles/home.css';
 import mainBackground from '../images/cycle-hill.jpg';
 
-const Home = () => {
+
+const Home = ({cartNum}) => {
     return (
         <div className="home-full-container">
-            <Nav />
+            <Nav cartNum={cartNum} />
             <div className="home-info-container">
                 <div className="home-info">
                     <h1 className="main-heading">Explore, Enjoy Life</h1>

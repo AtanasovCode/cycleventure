@@ -28,7 +28,7 @@
 
 .selected-product-info-container {
     width: 40vw;
-    height: 100vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -111,7 +111,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 1000px;
+        height: 1200px;
     }
     .selected-product-image-container {
         justify-content: center;
@@ -122,9 +122,10 @@
     .selected-product-info-container {
         width: 80vw;
         height: 90%;
+        padding: 25px;
         padding-top: 50px;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
         padding: 5px;
         text-align: center;
     }

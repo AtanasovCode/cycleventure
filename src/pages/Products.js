@@ -8,7 +8,8 @@ import category from '../images/categories.png';
 import close from '../images/close.png';
 
 
-const Products = () => {
+
+const Products = ({cartNum}) => {
 
     const formatNumber = (number) => {
         return number.toLocaleString('en-US');
@@ -48,7 +49,7 @@ const Products = () => {
 
     return (
         <div className="full-products-container">
-            <Nav />
+            <Nav cartNum={cartNum} />
             {displayMobile()}
             <img
                 src={iconSrc}
