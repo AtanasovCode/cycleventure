@@ -9,22 +9,24 @@ const Cart = ({
     cartProducts,
 }) => {
 
-    const [productsDisplayed, setProductsDisplayed] = useState([]);
-    const [totalPrice, setTotalPrice] = useState(0);
-    let i = 0;
+    const [cartItems, setCartItems] = useState([]);
+    const [prices, setPrices] = useState([]);
+    let i = 0;   
 
-    
+
     const handleChange = () => {
         console.log();
     }
 
+    const onBtnClick = () => {
+        console.log(prices);
+    }
 
     const renderProduct = () => {
         return (
             <div className="cart-products-container">
-                {AllData.map((product) => {
-                    if (product.id === cartProducts[i]) {
-                        if (cartProducts.length > i) i++;
+                {cartProducts.map((productId) => {
+                    const product = AllData.find((product) => product.id === productId);
                         return (
                             <div
                                 className="cart-product-box"
@@ -61,7 +63,7 @@ const Cart = ({
                             </div>
                         );
                     }
-                })}
+                )}
             </div>
         );
     }
@@ -75,10 +77,14 @@ const Cart = ({
                     Cart Info
                 </div>
                 <div>
-                    Total: {totalPrice}
+                    Total: 0
                 </div>
                 <div>
-                    Check Out
+                    <input
+                        type="button"
+                        value="Check Out"
+                        onClick={onBtnClick}
+                    />
                 </div>
             </div>
             {renderProduct()}

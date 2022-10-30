@@ -11,19 +11,13 @@ const SelectedProduct = ({
     setCartNum,
     setCartProducts,
 }) => {
-     
+
     let params = useParams();
     let productId = params.productId;
 
     const onAddBtn = () => {
         setCartNum(cartNum + 1);
         setCartProducts(current => [...current, `${productId}`]);
-        //AllData.map((product) => {
-        //    if(product.id === productId) {
-        //        setCartProducts(...AllData);
-        //    }
-        //}
-        //)
     }
 
     return (

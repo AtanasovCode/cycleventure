@@ -4,6 +4,11 @@ import Products from "./pages/Products";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import SelectedProduct from "./pages/SelectedProduct";
+import AllProducts from "./pages/AllProducts";
+import AllRoadBikes from "./pages/AllRoadBikes";
+import AllGravelBikes from "./pages/AllGravelBikes";
+import AllEBikes from "./pages/AllEBikes";
+import AllHelmets from "./pages/AllHelmets";
 import Cart from "./Cart";
 
 
@@ -25,7 +30,13 @@ const ShopApp = () => {
                         }
                     />
                     <Route path="/" element={<Home cartNum={cartNum} />} cartNum={cartNum} />
-                    <Route path="/products" element={<Products cartNum={cartNum} />} />
+                    <Route path="/products" element={<Products cartNum={cartNum} />}>
+                    <Route path="all-products" element={<AllProducts />} />
+                        <Route path="road-bikes" element={<AllRoadBikes />} />
+                        <Route path="gravel-bikes" element={<AllGravelBikes />} />
+                        <Route path="e-bikes" element={<AllEBikes />} />
+                        <Route path="helmets" element={<AllHelmets />} />
+                    </Route>
                     <Route path="/products/:productId" element={<SelectedProduct
                         cartNum={cartNum}
                         setCartNum={setCartNum}

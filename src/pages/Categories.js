@@ -1,3 +1,5 @@
+import { NavLink } from "react-router-dom";
+import '../styles/categories.css';
 import AllData from "../data/AllData";
 import RoadBikes from "../data/RoadBikes";
 import GravelBikes from "../data/GravelBikes";
@@ -10,16 +12,6 @@ const Categories = ({
     setProductsToDisplay,
     onCategoryClick,
 }) => {
-    
-    const onLinkClick = (e) => {
-        let category = e.currentTarget.id;
-        if(category === "all") setProductsToDisplay(AllData);
-        if(category === "road") setProductsToDisplay(RoadBikes);
-        if(category === "gravel") setProductsToDisplay(GravelBikes);
-        if(category === "ebikes") setProductsToDisplay(EBikes);
-        if(category === "helmets") setProductsToDisplay(Helmets);
-        onCategoryClick();
-    }
 
     return (
         <div className={className}>
@@ -27,31 +19,34 @@ const Categories = ({
                 <span className="categories-heading">Categories</span>
             </div>
             <div className="category-options-container" >
-                <div className="category-container active all-products" id="all" onClick={onLinkClick}>
+                <NavLink 
+                    to="/products/all-products" 
+                    className="category-container all-products"
+                >
                     <div className="category-name">
                         All Products
                     </div>
-                </div>
-                <div className="category-container road-bike-container" id="road" onClick={onLinkClick}>
+                </NavLink>
+                <NavLink to="/products/road-bikes" className="category-container road-bike-container">
                     <div className="category-name">
                         Road Bikes
                     </div>
-                </div>
-                <div className="category-container clothing-container" id="gravel" onClick={onLinkClick}>
+                </NavLink>
+                <NavLink to="/products/gravel-bikes" className="category-container clothing-container">
                     <div className="category-name">
                         Gravel Bikes
                     </div>
-                </div>
-                <div className="category-container ebikes-container" id="ebikes" onClick={onLinkClick}>
+                </NavLink>
+                <NavLink to="/products/e-bikes" className="category-container ebikes-container">
                     <div className="category-name">
                         eBikes
                     </div>
-                </div>
-                <div className="category-container helmets-container" id="helmets" onClick={onLinkClick}>
+                </NavLink>
+                <NavLink to="/products/helmets" className="category-container helmets-container">
                     <div className="category-name">
                         Helmets
                     </div>
-                </div>
+                </NavLink>
             </div>
         </div>
     );
