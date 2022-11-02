@@ -10,11 +10,7 @@ import close from '../images/close.png';
 
 
 
-const Products = ({ cartNum }) => {
-
-    const formatNumber = (number) => {
-        return number.toLocaleString('en-US');
-    }
+const Products = ({ cartNum, formatNumber }) => {
 
     const [iconSrc, setIconSrc] = useState(category);
     const [showCategories, setShowCategories] = useState(false);

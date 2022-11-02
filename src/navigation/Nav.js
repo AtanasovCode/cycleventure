@@ -1,70 +1,43 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import DisplayNav from "./DisplayNav";
 import '../styles/nav.css';
 import menu from '../images/menu.png';
 import close from '../images/close.png';
 
-const Nav = ({cartNum}) => {
+const Nav = ({ cartNum }) => {
 
-    const [displayMenu, setDisplayMenu] = useState(false);
     const [iconSrc, setIconSrc] = useState(menu);
+    const [navClassName, setNavClassName] = useState("nav-links");
 
     const onMenuClick = () => {
-        setDisplayMenu(!displayMenu);
-        if(iconSrc === menu) setIconSrc(close);
-        if(iconSrc === close) setIconSrc(menu)
-    }
-
-    const display = () => {
-        if (displayMenu) {
-            return (
-                <div>
-                    <div className="nav-links show">
-                        <Link to="/">Home</Link>
-                        <Link to="/products">Products</Link>
-                        <Link to="/contact">Contact</Link>
-                        <Link to="/cart">Cart ({cartNum})</Link>
-                    </div>
-                    <div className="nav-menu-icon">
-                        <img
-                            className="menu-icon"
-                            src={iconSrc}
-                            onClick={onMenuClick}
-                        />
-                    </div>
-                </div>
-            );
-        } else {
-            return (
-                <div>
-                    <div className="nav-links">
-                        <Link to="/">Home</Link>
-                        <Link to="/products">Products</Link>
-                        <Link to="/contact">Contact</Link>
-                        <Link to="/cart">Cart ({cartNum})</Link>
-                    </div>
-                    <div className="nav-menu-icon">
-                        <img
-                            className="menu-icon"
-                            src={menu}
-                            onClick={onMenuClick}
-                        />
-                    </div>
-                </div>
-            );
+        if(navClassName === "nav-links") {
+            setNavClassName("nav-links show");
+        }else {
+            setNavClassName("nav-links");
         }
+        if (iconSrc === menu) setIconSrc(close);
+        if (iconSrc === close) setIconSrc(menu)
     }
 
 
 
     return (
-        <div className="nav-container">
+        <div className="nav-full-container">
             <div className="nav-logo-container">
                 <div className="nav-logo">
-                    cycleventure.
+                    <div className="nav-bg-container"></div>
+                    <div className="nav-name">
+                        cycleventure.
+                    </div>
                 </div>
             </div>
-            {display()}
+            <DisplayNav
+                    className={navClassName}
+                    onMenuClick={onMenuClick}
+                    menu={menu}
+                    cartNum={cartNum}
+                />
         </div>
     );
 }

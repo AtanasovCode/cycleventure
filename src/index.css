@@ -3,6 +3,16 @@
   --nav-bg: #04030F;
   --nav-a-color: rgb(175, 171, 171);
   --nav-a-hover: #73EEDC;
+  --shop-btn: rgb(158, 148, 148);
+  --shop-btn-hover: #fff;
+  --money-color: lime;
+  --border-outline: rgba(255, 255, 255, .3);
+  --category-tint: rgba(0, 0, 0, .6);
+  --category-tint-hover: rgba(0, 0, 0, .199);
+  --category-border-active: rgba(255, 255, 255, .6);
+  --cart-add-color: lime;
+  --transition-short: all .4s ease-in;
+  --transition-long: all .6s ease-in;
 }
 
 * {

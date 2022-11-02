@@ -23,7 +23,7 @@ const Home = ({cartNum}) => {
                             Adventure Awaits!
                         </span>
                         <Link
-                            to="/products"
+                            to="/products/all-products"
                             className="shop-btn"
                         >
                             Shop Now!

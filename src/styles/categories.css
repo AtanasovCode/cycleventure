@@ -61,19 +61,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(0, 0, 0, .6);
+    background-color: var(--category-tint);
     font-size: 22px;
-    transition: all .4s;
+    transition: var(--transition-short);
 }
 
 .category-name:hover {
-    background-color: rgba(0, 0, 0, .2);
-    transition: all .4s;
+    background-color: var(--category-tint-hover);
+    transition: var(--transition-short);
     cursor: pointer;
 }
 
 .category-container.active {
-    border: 2px solid rgba(255, 255, 255, .4);
+    border: 1px solid var(--category-border-active);
+    filter: brightness(120%);
 }
 
 .all-products {
@@ -93,5 +94,5 @@
 }
 
 .clothing-container {
-    background-image: url('../images/clothing.jpg');
+    background-image: url('../images/gravel.jpg');
 }

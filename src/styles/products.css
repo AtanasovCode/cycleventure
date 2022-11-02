@@ -18,7 +18,7 @@
 }
 
 .product-box {
-    border: 1px solid black;
+    border: 1px solid var(--background);
     width: 250px;
     height: 280px;
     padding-top: 10px;
@@ -29,14 +29,14 @@
     justify-content: flex-start;
     cursor: pointer;
     border: 1px solid transparent;
-    transition: all .5s;
+    transition: var(--transition-long);
     text-decoration: none;
 }
 
 
 .product-box:hover {
-    border: 1px solid #fff;
-    transition: all .5s;
+    border: 1px solid var(--border-outline);
+    transition: var(--transition-long);
 }
 
 .product-image-displayed {
@@ -58,8 +58,8 @@
     font-size: 16px;
     text-align: center;
     font-weight: 400;
-    opacity: .5;
-    color: #fff;
+    opacity: .8;
+    color: lime;
     text-decoration: none;
 }
 
@@ -75,9 +75,11 @@
         grid-template-columns: repeat(2, auto);
         grid-gap: 6vh 10vw;
     }
+
     .product-box {
         width: 200px;
     }
+
     .product-image-displayed {
         width: 200px;
     }
@@ -88,9 +90,11 @@
         grid-gap: 5vh 5vw;
         grid-template-columns: auto;
     }
+
     .product-box {
         width: 250px;
     }
+
     .product-image-displayed {
         width: 250px;
     }
@@ -101,29 +105,36 @@
         grid-gap: 8vh 8vw;
         grid-template-columns: repeat(2, auto);
     }
+
     .product-box {
         width: 220px;
     }
+
     .product-image-displayed {
         width: 220px;
     }
+
     .displayed-products-container {
         margin-left: 0;
     }
+
     .categories-full-container {
         transform: translateX(-250px);
         position: fixed;
-        transition: all .4s;
+        transition: var(--transition-short);
     }
+
     .displayed-products-container {
         width: calc(100vw + 250px);
     }
+
     .categories-full-container.show {
         transform: translateX(0);
-        transition: all .4s;
+        transition: var(--transition-short);
         z-index: 999;
         position: fixed;
     }
+
     .category-icon {
         width: 35px;
         height: 35px;
@@ -137,19 +148,24 @@
         grid-gap: 10vh 10vw;
         grid-template-columns: auto;
     }
+
     .product-box {
         width: 250px;
     }
+
     .product-image-displayed {
         width: 250px;
     }
+
     .categories-full-container.show {
         width: 100vw;
         position: fixed;
     }
+
     .displayed-products-container.no-scroll {
         overflow-y: hidden;
     }
+
     .category-icon {
         width: 25px;
         height: 25px;
