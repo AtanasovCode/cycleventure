@@ -1,4 +1,5 @@
-import { Link, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import DisplayProducts from "../navigation/DisplayProducts";
 import RoadBikes from "../data/AllData";
 
