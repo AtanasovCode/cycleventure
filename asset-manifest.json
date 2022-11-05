@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.bd4d10d5.css",
-    "main.js": "/static/js/main.7e83a54f.js",
+    "main.css": "/static/css/main.8c3f9b98.css",
+    "main.js": "/static/js/main.e9130d86.js",
     "static/media/logo-pattern.jpg": "/static/media/logo-pattern.3a88a5de66e897127bce.jpg",
     "static/media/cycle-hill.jpg": "/static/media/cycle-hill.a7093868a2ba250277f4.jpg",
     "static/media/domane-lt-plus.webp": "/static/media/domane-lt-plus.032577b4bf93a1441d95.webp",
@@ -42,11 +42,11 @@
     "static/media/bell-z-20.webp": "/static/media/bell-z-20.9d7a4609cc56234c42bc.webp",
     "static/media/lazer-century-mips.webp": "/static/media/lazer-century-mips.6df902f714eb7cc154e3.webp",
     "index.html": "/index.html",
-    "main.bd4d10d5.css.map": "/static/css/main.bd4d10d5.css.map",
-    "main.7e83a54f.js.map": "/static/js/main.7e83a54f.js.map"
+    "main.8c3f9b98.css.map": "/static/css/main.8c3f9b98.css.map",
+    "main.e9130d86.js.map": "/static/js/main.e9130d86.js.map"
   },
   "entrypoints": [
-    "static/css/main.bd4d10d5.css",
-    "static/js/main.7e83a54f.js"
+    "static/css/main.8c3f9b98.css",
+    "static/js/main.e9130d86.js"
   ]
 }
