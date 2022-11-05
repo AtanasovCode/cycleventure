@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import AllData from "../data/AllData";
 import Nav from "../navigation/Nav";
 import '../styles/selected-product.css';
@@ -16,6 +17,12 @@ const SelectedProduct = ({
     setPrice,
     formatNumber,
 }) => {
+
+    const { pathname } = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, [pathname]);
 
     let params = useParams();
     let productId = params.productId;
