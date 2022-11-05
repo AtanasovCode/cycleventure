@@ -22,27 +22,28 @@ const Categories = ({
                 <NavLink 
                     to="/products/all-products" 
                     className="category-container all-products"
+                    onClick={onCategoryClick}
                 >
                     <div className="category-name">
                         All Products
                     </div>
                 </NavLink>
-                <NavLink to="/products/road-bikes" className="category-container road-bike-container">
+                <NavLink to="/products/road-bikes" className="category-container road-bike-container" onClick={onCategoryClick}>
                     <div className="category-name">
                         Road Bikes
                     </div>
                 </NavLink>
-                <NavLink to="/products/gravel-bikes" className="category-container clothing-container">
+                <NavLink to="/products/gravel-bikes" className="category-container clothing-container" onClick={onCategoryClick}>
                     <div className="category-name">
                         Gravel Bikes
                     </div>
                 </NavLink>
-                <NavLink to="/products/e-bikes" className="category-container ebikes-container">
+                <NavLink to="/products/e-bikes" className="category-container ebikes-container" onClick={onCategoryClick}>
                     <div className="category-name">
                         eBikes
                     </div>
                 </NavLink>
-                <NavLink to="/products/helmets" className="category-container helmets-container">
+                <NavLink to="/products/helmets" className="category-container helmets-container" onClick={onCategoryClick}>
                     <div className="category-name">
                         Helmets
                     </div>
