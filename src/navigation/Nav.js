@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
 import DisplayNav from "./DisplayNav";
 import '../styles/nav.css';
@@ -6,6 +6,12 @@ import menu from '../images/menu.png';
 import close from '../images/close.png';
 
 const Nav = ({ cartNum }) => {
+
+    const pathname = useLocation();
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+      }, [pathname]);
 
     const [iconSrc, setIconSrc] = useState(menu);
     const [navClassName, setNavClassName] = useState("nav-links");
